@@ -1,4 +1,4 @@
-- Hacer estructura basica del programa
+- agregar boton de resultado
+- agregar boton de borrar
 - modificar icono
 - completar readme
-- hacer github

@@ -10,7 +10,13 @@ export function buttonEventSetter(){
     let buttonList = document.getElementsByClassName(buttonClassName)
     for (let i = 0; i < buttonList.length; i++){
     buttonList[i].addEventListener(("click"), (e) => {
-        displayElement.innerText += (buttonList[i].innerText)
+        if (buttonList[i].innerText === "0"){
+            if (displayElement.innerText.length !== 0){
+                displayElement.innerText += (buttonList[i].innerText)
+            }
+        } else {
+            displayElement.innerText += (buttonList[i].innerText)
+        }
     })
     }
 }
