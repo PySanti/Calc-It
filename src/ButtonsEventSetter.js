@@ -28,8 +28,6 @@ let lastOperator = undefined;
 function setButtonEvent(button){
     const displayElement = document.getElementsByClassName(displayClassName)[0];
     button.addEventListener(("click"), () => {
-        console.log(`Valor de pendingValue, `)
-        console.log(pendingValue)
         if (isNumberButton(button)){
             if ((displayIsVoid(displayElement))){
                 if (button.innerText !== "0"){
@@ -38,40 +36,39 @@ function setButtonEvent(button){
             } else {
                 displayElement.innerText += (button.innerText)
             }
-        } else {
-            if (isDeleteButton(button,deleteButtonClassName)){
-                clearDisplay(displayElement)
-            } else if (isBackButton(button,backButtonClassName)){
-                if (!displayIsVoid(displayElement)){
-                    displayElement.innerText = displayElement.innerText.slice(0, displayElement.innerText.length - 1) 
-                    if (displayElement.innerText.length === 0 ){
-                        clearDisplay(displayElement)
-                    } 
-                }
-            } else if (isOperatorButton(button,operatorsList)){
-                if (pendingValue === undefined){
-                    pendingValue = Number(displayElement.innerText);
+        } else if (isDeleteButton(button,deleteButtonClassName)){
+            clearDisplay(displayElement)
+        } else if (isBackButton(button,backButtonClassName)){
+            if (!displayIsVoid(displayElement)){
+                displayElement.innerText = displayElement.innerText.slice(0, displayElement.innerText.length - 1) 
+                if (displayElement.innerText.length === 0 ){
                     clearDisplay(displayElement)
-                    lastOperator = button.innerText
                 } 
-            } else if (isResultButton(button,resultButtonClassName)){
-                let currentDisplayValue = Number(displayElement.innerText)
-                if (isPlusOperator(lastOperator)){
-                    currentResult = pendingValue + currentDisplayValue
-                } else if (isSubsOperator(lastOperator)){
-                    currentResult= pendingValue - currentDisplayValue
-                } else if (isProdOperator(lastOperator)){
-                    currentResult= pendingValue * currentDisplayValue
-                } else if (isDivOperator(lastOperator)){
-                    currentResult = Math.round(pendingValue / currentDisplayValue)
-                }
-                displayElement.innerText = `${currentResult}`
-                pendingValue = undefined;
-                currentResult = undefined
             }
+        } else if (isOperatorButton(button,operatorsList)){
+            if (pendingValue === undefined){
+                pendingValue = Number(displayElement.innerText);
+                clearDisplay(displayElement)
+                lastOperator = button.innerText
+            } 
+        } else if (isResultButton(button,resultButtonClassName)){
+            let currentDisplayValue = Number(displayElement.innerText)
+            if (isPlusOperator(lastOperator)){
+                currentResult = pendingValue + currentDisplayValue
+            } else if (isSubsOperator(lastOperator)){
+                currentResult= pendingValue - currentDisplayValue
+            } else if (isProdOperator(lastOperator)){
+                currentResult= pendingValue * currentDisplayValue
+            } else if (isDivOperator(lastOperator)){
+                currentResult = Math.round(pendingValue / currentDisplayValue)
+            }
+            displayElement.innerText = `${currentResult}`
+            pendingValue = undefined;
+            currentResult = undefined
         }
     })
 }
+
 export function buttonEventSetter(){
     let buttonList = document.getElementsByClassName(buttonClassName)
     for (let i = 0; i < buttonList.length; i++){

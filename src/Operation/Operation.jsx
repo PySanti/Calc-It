@@ -1,7 +1,7 @@
-import {React} from "react"
+import {React}          from "react"
+import { Numbers }      from "../Numbers/Numbers"
+import { Operators }    from "../Operators/Operators"
 import "./OperationStyles.css"
-import { Numbers } from "../Numbers/Numbers"
-import { Operators } from "../Operators/Operators"
 
 export function Operation(props){
     return (
