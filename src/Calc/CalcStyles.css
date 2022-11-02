@@ -1,0 +1,12 @@
+.calc-container{
+    --container-width : 50vw;
+    --container-height : 50vh;
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    width: var(--container-width);
+    height: var(--container-height);
+    left : calc(50vw - var(--container-width)/2);
+    top : calc(50vh - var(--container-height)/2);
+}
+

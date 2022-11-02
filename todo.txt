@@ -1,0 +1,4 @@
+- Hacer estructura basica del programa
+- modificar icono
+- completar readme
+- hacer github

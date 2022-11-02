@@ -1,0 +1,19 @@
+.numbers-container{
+    background-color: #00f;
+    display: grid;
+    grid-template-columns: repeat(1fr,3);
+    grid-template-rows: repeat(1fr,3);
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.number-item{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 10px ;
+    margin:2px;
+
+}
