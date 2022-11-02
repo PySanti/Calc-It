@@ -1,6 +1,9 @@
 import {React} from "react"
 import {Button} from "../Button/Button"
 import "./NumbersStyles.css"
+import {BackButton} from "../BackButton/BackButton"
+import {DeleteButton} from "../DeleteButton/DeleteButton"
+import {ResultButton} from "../ResultButton/ResultButton"
 
 const numberButtonClassName = "number-item"
 let items_list = []
@@ -13,6 +16,9 @@ export function Numbers(){
     return (
         <div className="numbers-container">
             {items_list}
+            <BackButton/>
+            <DeleteButton/>
+            <ResultButton/>
         </div>
     )
 }

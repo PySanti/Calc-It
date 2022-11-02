@@ -1,4 +1,7 @@
-- agregar boton de resultado
-- agregar boton de borrar
+- refactorizar y repasar el codigo
+- agregar funciones de teclado
 - modificar icono
 - completar readme
+- animacion en display cuando se introduce un numero
+- agregar componente y animacion para pendingValue
+- animacion en numeros cuando se emplean

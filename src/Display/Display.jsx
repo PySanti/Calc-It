@@ -5,6 +5,6 @@ export const displayClassName = "display"
 
 export function Display(){
     return (
-        <div className={displayClassName}></div>
+        <div className={displayClassName}>0</div>
     )
 }
