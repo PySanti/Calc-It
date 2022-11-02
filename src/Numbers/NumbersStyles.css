@@ -1,9 +1,9 @@
 .numbers-container{
     background-color: #00f;
+    grid-area: num;
     display: grid;
-    grid-template-columns: repeat(1fr,3);
-    grid-template-rows: repeat(1fr,3);
-    flex-wrap: wrap;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
     padding: 20px;
 }
 

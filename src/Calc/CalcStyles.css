@@ -1,6 +1,8 @@
 .calc-container{
-    --container-width : 50vw;
-    --container-height : 50vh;
+    font-size: 20px;
+    font-family: 'Kameron', serif;
+    --container-width : 500px;
+    --container-height : 500px;
     display: flex;
     position: absolute;
     flex-direction: column;

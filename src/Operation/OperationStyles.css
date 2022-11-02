@@ -1,4 +1,7 @@
 .operation-container{
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-areas: "num num num op"
+    "num num num op"
+    "num num num op";
+    width: inherit;
 }
