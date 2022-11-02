@@ -1,8 +1,10 @@
 import {React} from "react"
 import "./DisplayStyles.css"
 
+export const displayClassName = "display"
+
 export function Display(){
     return (
-        <div className="display">123</div>
+        <div className={displayClassName}></div>
     )
 }

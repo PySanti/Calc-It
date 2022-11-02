@@ -1,5 +1,7 @@
 .display{
-    background-color: #0f0;
     padding: 20px;
     display: flex;
+    background-color: #aaa;
+    border-radius: 10px;
+    margin: 10px;
 }

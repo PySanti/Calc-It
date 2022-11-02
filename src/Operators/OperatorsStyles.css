@@ -1,7 +1,7 @@
 .operators{
-    background-color: #f00;
     padding: 20px;
     grid-area: op;
+    border-radius: 10px;
 }
 
 .operator-item{
