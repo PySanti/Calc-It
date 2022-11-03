@@ -5,4 +5,9 @@
     border-radius: 10px;
     margin: 10px;
     overflow: hidden;
+    transition: background-color.1s;
+}
+
+.input-animation{
+    background-color: #999;
 }

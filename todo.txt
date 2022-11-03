@@ -1,4 +1,3 @@
-- agregar funciones de teclado
 - modificar icono
 - completar readme
 - animacion en display cuando se introduce un numero
