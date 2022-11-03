@@ -1,3 +1,3 @@
 export function isDivOperator(operator){
-    return operator === "÷";
+    return operator === "/";
 }

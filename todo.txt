@@ -1,4 +1,3 @@
-- refactorizar y repasar el codigo
 - agregar funciones de teclado
 - modificar icono
 - completar readme
