@@ -18,17 +18,14 @@ let currentResult = undefined;
 let lastOperator = undefined;
 
 
-export function setInputEvent({isClick, buttonContent, display, event} ){
+export function setInputEvent({ buttonContent, display} ){
     if (isNumberButton(buttonContent)){
-        numberButtonHandler(buttonContent, display, isClick)
+        numberButtonHandler(buttonContent, display)
     } else if (isDeleteButton(buttonContent)){
         deleteButtonHandler(display)
     } else if (isBackButton(buttonContent)){
         backButtonHandler(display)
     } else if (isOperatorButton(buttonContent, operatorsList)){
-        if (!(isClick) || (buttonContent === "/")){
-            event.preventDefault()
-        }
         [pendingValue,lastOperator] = operatorHandler(pendingValue, display, lastOperator, buttonContent)
     } else if (isResultButton(buttonContent)){
         [pendingValue,currentResult] = resultButtonHandler(display, lastOperator, pendingValue, currentResult,operatorsList)

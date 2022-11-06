@@ -10,6 +10,10 @@
     cursor: pointer;
     user-select: none;
 }
+
+.button-key-animation{
+    background-color: #aaa !important;
+}
 .button:hover{
     background-color: #aaa;
 }

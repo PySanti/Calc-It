@@ -7,12 +7,16 @@ import {nanoid}         from "nanoid"
 import "./NumbersStyles.css"
 
 const numberButtonClassName = "number-item"
+export const buttonsDict = {} // diccionario de bottones con, clave : contenido, valor : id
 let items_list = []
 
 for (let i = 0; i <= 9; i ++){
     let currentId = nanoid()
     items_list.push(<Button key={currentId} id={currentId} classnm={numberButtonClassName} content = {i}/>)
+    buttonsDict[i] = currentId;
 }
+
+
 
 export const numbersComponentList = items_list;
 export const numbersAnimationClassName = "number-key-animation"

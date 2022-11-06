@@ -1,7 +1,7 @@
 import React                  from 'react';
 import ReactDOM               from 'react-dom/client';
-import {Calc}                 from "./Calc/Calc"
-import {buttonEventSetter}    from './ButtonsEventSetter';
+import {Calc}                 from "./modules/Calc/Calc"
+import {buttonEventSetter}    from './modules/ButtonsEventSetter';
 import './index.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
