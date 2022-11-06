@@ -20,7 +20,7 @@ let lastOperator = undefined;
 
 export function setInputEvent({isClick, buttonContent, display, event} ){
     if (isNumberButton(buttonContent)){
-        numberButtonHandler(buttonContent, display)
+        numberButtonHandler(buttonContent, display, isClick)
     } else if (isDeleteButton(buttonContent)){
         deleteButtonHandler(display)
     } else if (isBackButton(buttonContent)){

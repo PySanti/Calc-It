@@ -14,5 +14,10 @@
     background-color: #fff;
     border-radius: 10px ;
     margin:2px;
+    transition: background-color .1s;
+}
 
+
+.number-key-animation{
+    background-color: #999;
 }

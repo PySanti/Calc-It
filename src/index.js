@@ -1,5 +1,5 @@
-import React                from 'react';
-import ReactDOM             from 'react-dom/client';
+import React                  from 'react';
+import ReactDOM               from 'react-dom/client';
 import {Calc}                 from "./Calc/Calc"
 import {buttonEventSetter}    from './ButtonsEventSetter';
 import './index.css';

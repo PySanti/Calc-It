@@ -8,6 +8,8 @@ operatorsList.forEach((operator) => {
     operatorsButton.push(<Button classnm="operator-item" content={operator}/>)
 })
 
+export const operatorsComponentlist = operatorsButton;
+
 export function Operators(){
     return (
         <div className="operators">
