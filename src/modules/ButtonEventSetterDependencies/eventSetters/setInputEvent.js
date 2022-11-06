@@ -22,7 +22,7 @@ export function setInputEvent({ buttonContent, display} ){
     if (isNumberButton(buttonContent)){
         numberButtonHandler(buttonContent, display)
     } else if (isDeleteButton(buttonContent)){
-        deleteButtonHandler(display)
+        [pendingValue,lastOperator] = deleteButtonHandler(display, pendingValue, lastOperator)
     } else if (isBackButton(buttonContent)){
         backButtonHandler(display)
     } else if (isOperatorButton(buttonContent, operatorsList)){
