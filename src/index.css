@@ -2,5 +2,7 @@
     margin: 0px;
 }
 body{
+    --standar-color : #aaa;
+    --background-main-color : #777;
     margin : 0px;
 }

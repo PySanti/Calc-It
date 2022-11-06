@@ -11,5 +11,6 @@
     left : calc(50vw - var(--container-width)/2);
     top : 30vh ;
     border-radius: 10px;
-    background-color: #777;
+    background-color: var(--background-main-color);
+    z-index: 9999;
 }

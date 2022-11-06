@@ -1,0 +1,13 @@
+.pending-value{
+    position: absolute;
+    left: 58%;
+    top: 50%;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: var(--standar-color);
+    transition: top 1s;
+}
+
+.pending-value-animation{
+    top: 25%;
+}

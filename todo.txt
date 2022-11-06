@@ -1,5 +1,3 @@
 - modificar icono
 - completar readme
-- animacion en display cuando se introduce un numero
 - agregar componente y animacion para pendingValue
-- animacion en numeros cuando se emplean
